@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupo Scout Aventureros</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Grupo Scout Aventureros</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#actividades">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#unete">Únete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="inicio"
+      class="vh-100 d-flex align-items-center"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('/api/placeholder/1920/1080') center/cover;
+      "
+    >
+      <div class="container text-center text-white">
+        <h1 class="display-1 mb-4">Grupo Scout Aventureros</h1>
+        <p class="lead mb-4">
+          Formando líderes y ciudadanos responsables desde 1985
+        </p>
+        <a href="#unete" class="btn btn-primary btn-lg">¡Únete a nosotros!</a>
+      </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Quiénes Somos</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="/api/placeholder/600/400"
+              alt="Scouts en acción"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Nuestra Historia</h3>
+            <p>
+              Desde 1985, hemos estado formando jóvenes en valores, liderazgo y
+              respeto por la naturaleza. Nuestro grupo scout es parte del
+              movimiento scout mundial y seguimos sus principios fundamentales.
+            </p>
+            <h3>Nuestros Valores</h3>
+            <ul>
+              <li>Responsabilidad y compromiso</li>
+              <li>Respeto por la naturaleza</li>
+              <li>Trabajo en equipo</li>
+              <li>Servicio a la comunidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actividades -->
+    <section id="actividades" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Nuestras Actividades</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="/api/placeholder/400/300"
+                class="card-img-top"
+                alt="Campamentos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Campamentos</h5>
+                <p class="card-text">
+                  Organizamos campamentos trimestrales donde los scouts aprenden
+                  habilidades de supervivencia y trabajo en equipo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="/api/placeholder/400/300"
+                class="card-img-top"
+                alt="Proyectos comunitarios"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Proyectos Comunitarios</h5>
+                <p class="card-text">
+                  Realizamos proyectos de servicio a la comunidad, contribuyendo
+                  al desarrollo social.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img
+                src="/api/placeholder/400/300"
+                class="card-img-top"
+                alt="Talleres"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Talleres</h5>
+                <p class="card-text">
+                  Desarrollamos talleres de primeros auxilios, orientación y
+                  técnicas scouts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Únete -->
+    <section id="unete" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">¡Únete a Nosotros!</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Edad</label>
+                    <input type="number" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Mensaje</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Enviar solicitud
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Ubicación</h3>
+            <p>Av. Principal 123<br />Ciudad, País</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Contacto</h3>
+            <p>Email: info@scouts.com<br />Tel: (123) 456-7890</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Síguenos</h3>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">
+        &copy; 2024 Grupo Scout Aventureros. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
