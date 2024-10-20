@@ -3,17 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grupo Scout Aventureros</title>
+    <title>Grupo Scout José Hernádez 378</title>
+    <!-- Bootstrap -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .nav-link:hover {
+        color: #ffdd57;
+        transition: color 0.3s ease;
+      }
+      h1,
+      p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      .btn-primary {
+        background-color: #ffdd57;
+        border-color: #ffdd57;
+      }
+      .btn-primary:hover {
+        background-color: #ffcc00;
+        border-color: #ffcc00;
+        transition: background-color 0.3s ease;
+      }
+      footer {
+        background-color: #111;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Grupo Scout Aventureros</a>
+        <a class="navbar-brand" href="#">Grupo Scout José Hernández 378</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,22 +79,41 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
-      id="inicio"
-      class="vh-100 d-flex align-items-center"
-      style="
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url('/api/placeholder/1920/1080') center/cover;
-      "
-    >
-      <div class="container text-center text-white">
-        <h1 class="display-1 mb-4">Grupo Scout Aventureros</h1>
-        <p class="lead mb-4">
-          Formando líderes y ciudadanos responsables desde 1985
-        </p>
-        <a href="#unete" class="btn btn-primary btn-lg">¡Únete a nosotros!</a>
-      </div>
-    </section>
+<section
+id="inicio"
+class="vh-100 d-flex align-items-center"
+style="position: relative; overflow: hidden"
+>
+<!-- Video de fondo -->
+<div
+  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden;"
+>
+  <iframe
+    width="100%"
+    height="100%"
+    src="https://www.youtube.com/embed/sREU2SHaTBU?si=lK593OYxH5lxER2K&autoplay=1&mute=1&loop=1&playlist=sREU2SHaTBU&controls=0&showinfo=0&modestbranding=1&vq=hd1080"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100vw; height: 130vh; object-fit: cover; border: none;"
+  ></iframe>
+</div>
+
+<!-- Contenido del Hero Section -->
+<div
+  class="container text-center text-white"
+  style="position: relative; z-index: 1"
+>
+  <h1 class="display-1 mb-4">Grupo Scout José Hernández 378</h1>
+  <p class="lead mb-4">
+    Formando líderes y ciudadanos responsables desde 1967
+  </p>
+  <a href="#unete" class="btn btn-primary btn-lg">¡Únete a nosotros!</a>
+</div>
+</section>
+
 
     <!-- Quiénes Somos -->
     <section id="quienes-somos" class="py-5">
@@ -69,7 +122,7 @@
         <div class="row">
           <div class="col-md-6">
             <img
-              src="/api/placeholder/600/400"
+              src="./Campamento png.jpg"
               alt="Scouts en acción"
               class="img-fluid rounded"
             />
@@ -77,7 +130,7 @@
           <div class="col-md-6">
             <h3>Nuestra Historia</h3>
             <p>
-              Desde 1985, hemos estado formando jóvenes en valores, liderazgo y
+              Desde 1967, hemos estado formando jóvenes en valores, liderazgo y
               respeto por la naturaleza. Nuestro grupo scout es parte del
               movimiento scout mundial y seguimos sus principios fundamentales.
             </p>
@@ -101,7 +154,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="/api/placeholder/400/300"
+                src="./Campamento png.jpg"
                 class="card-img-top"
                 alt="Campamentos"
               />
@@ -117,7 +170,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="/api/placeholder/400/300"
+                src="./IMG_20211204_201042.jpg"
                 class="card-img-top"
                 alt="Proyectos comunitarios"
               />
@@ -133,7 +186,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <img
-                src="/api/placeholder/400/300"
+                src="./IMG_20220618_181909.jpg"
                 class="card-img-top"
                 alt="Talleres"
               />
@@ -187,6 +240,7 @@
     </section>
 
     <!-- Contacto -->
+    <!-- Contacto -->
     <section id="contacto" class="py-5 bg-dark text-white">
       <div class="container">
         <div class="row">
@@ -207,12 +261,26 @@
             </div>
           </div>
         </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.851172839958!2d-64.19810862468616!3d-31.363085893676192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432990789542803%3A0xc6be136d6e6b5972!2sGrupo%20Scout%20Jose%20Hernandez!5e0!3m2!1ses-419!2sar!4v1729386049583!5m2!1ses-419!2sar"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
       </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">
-        &copy; 2024 Grupo Scout Aventureros. Todos los derechos reservados.
+        &copy; 2024 Grupo Scout José Henrnández. Todos los derechos reservados.
       </p>
     </footer>
 
